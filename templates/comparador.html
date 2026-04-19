@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Comparador</title>
+</head>
+<body>
+    <h1>Comparador de servicios</h1>
+    <table border="1">
+        <tr><th>Servicio</th><th>Precio (COP)</th></tr>
+        {% for s in servicios %}
+        <tr>
+            <td>{{ s.nombre }}</td>
+            <td>{{ s.precio }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <a href="/">Volver</a>
+</body>
+</html>

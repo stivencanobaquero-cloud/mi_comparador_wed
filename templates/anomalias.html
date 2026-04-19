@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Anomalías</title>
+</head>
+<body>
+    <h1>Detector de anomalías</h1>
+    <p>Promedio de precios: {{ promedio }}</p>
+    <h3>Alertas:</h3>
+    <ul>
+        {% for a in alertas %}
+        <li>Precio anómalo detectado: {{ a }}</li>
+        {% endfor %}
+    </ul>
+    <a href="/">Volver</a>
+</body>
+</html>
